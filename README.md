@@ -29,3 +29,5 @@ On each of the three pages there will be navigation links which allows you to re
 Paper Puppetry: Objects should look like paper cut-outs. There will also be bright colors and interesting textures. I am additionally really interested in playing with 3D space, making it look like some objects are closer to the user than others. 
 
 To further explain the visual style of my project I created a prototype of the first page of the story (the forest), though I haven’t yet recorded the narrating voice, meaning that there will be no story telling in this particular example. At this point there aren’t any interactive sound effects on the page either. 
+
+To view the Prototype of the first page (Featuring the Nightingale in the forest) click [HERE](http://i6.cims.nyu.edu/~set390/380/final_project/nightingale/)
