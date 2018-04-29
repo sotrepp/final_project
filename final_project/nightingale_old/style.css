@@ -1,0 +1,204 @@
+body {
+}
+
+#container {
+  background-color: #00162d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  padding: 0px;
+}
+
+#galaxy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-height: 100%;
+  max-width: 100%;
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+
+#grassRow1 {
+  margin-top: 35%;
+  margin-left: -20px;
+  max-width: 101%;
+  max-height: auto;
+  position: absolute;
+  z-index: 200;
+  animation-name: grassMove1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+
+#grassRow2 {
+  margin-top: 34%;
+  margin-left: -20px;
+  max-width: 101%;
+  max-height: auto;
+  position: absolute;
+  z-index: 150;
+  animation-name: grassMove2;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+
+#grassRow3 {
+  margin-top: 32%;
+  margin-left: -20px;
+  max-width: 101%;
+  max-height: auto;
+  position: absolute;
+  z-index: 100;
+  animation-name: grassMove1;
+  animation-delay: 1.5s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes grassMove1 {
+  50% {
+    transform: translate3d(-3px, 3px, 0px);
+  }
+}
+
+@keyframes grassMove2 {
+  50% {
+    transform: translate3d(3px, -3px, 0px);
+  }
+}
+
+@keyframes treeMove {
+  50% {
+    transform: translate3d(1px, -3px, 0px);
+  }
+}
+
+
+
+#tree1 {
+  margin-left: 2%;
+  margin-top: 10%;
+  position: absolute;
+  z-index: 99;
+}
+
+#tree2 {
+  margin-left: 7%;
+  margin-top: 5%;
+  position: absolute;
+  z-index: 101;
+}
+
+#tree3 {
+  margin-left: 27%;
+  margin-top: 10%;
+  position: absolute;
+  z-index: 99;
+}
+
+#tree4withBird {
+  margin-left: 36%;
+  margin-top: 10%;
+  position: absolute;
+  z-index: 151;
+}
+
+#tree5 {
+  margin-left: 70%;
+  margin-top: -120px;
+  position: absolute;
+  z-index: 151;
+}
+
+#tree6 {
+  margin-left: 78%;
+  margin-top: 5%;
+  position: absolute;
+  z-index: 99;
+}
+
+#tree7 {
+  margin-left: 83%;
+  margin-top: 5%;
+  position: absolute;
+  z-index: 101;
+}
+
+#tree8 {
+  margin-left: 92%;
+  margin-top: 5%;
+  position: absolute;
+  z-index: 99;
+}
+
+#tree9 {
+  margin-left: 96%;
+  margin-top: 30px;
+  position: absolute;
+  z-index: 151;
+}
+
+#backCrown1 {
+  margin-left: 40%;
+  margin-top: -10%;
+  position: absolute;
+  z-index: 99;
+}
+
+#backCrown2 {
+  margin-left: -12%;
+  margin-top: -4%;
+  position: absolute;
+  z-index: 99;
+}
+
+#frontCrown1 {
+  margin-left: -2%;
+  margin-top: -6%;
+  position: absolute;
+  z-index: 156;
+  animation-name: treeMove;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+
+#frontCrown2 {
+  margin-left: 15%;
+  margin-top: -7%;
+  position: absolute;
+  z-index: 156;
+  animation-name: treeMove;
+  animation-delay: 0.5s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+
+#frontCrown3 {
+  margin-left: 78%;
+  margin-top: -7%;
+  position: absolute;
+  z-index: 157;
+  animation-name: treeMove;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
