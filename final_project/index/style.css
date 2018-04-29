@@ -1,0 +1,174 @@
+body {
+  background-color: #ffc1bf;
+}
+
+#container {
+  background-color: #ffc1bf;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  padding: 0px;
+}
+
+#gradient {
+  background-image: url("media/gradient.png");
+  background-color: #ffc1bf;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  padding: 0px;
+}
+
+#texture {
+  background-image: url("media/texture.png");
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  padding: 0px;
+  mix-blend-mode: multiply;
+}
+
+#mountainsBack {
+  position: absolute;
+  margin-top: 13%;
+  margin-left: 38%;
+}
+
+#cloud1 {
+  position: absolute;
+  margin-left: -3%;
+  margin-top: 1%;
+  mix-blend-mode: multiply;
+}
+
+#cloud2 {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 40%;
+  mix-blend-mode: multiply;
+}
+
+#cloud3 {
+  position: absolute;
+  margin-left: 75%;
+  mix-blend-mode: multiply;
+}
+
+#forest {
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 2%;
+  z-index: 80;
+}
+
+#forestSmall {
+  position: fixed;
+  margin-top: 35%;
+  margin-left: 3%;
+  z-index: 81;
+
+}
+
+#mountainLeft {
+  position: absolute;
+  margin-left: -69%;
+  margin-top: 32%;
+  z-index: 100;
+}
+
+#mountainRight {
+  position: absolute;
+  margin-top: 26%;
+  margin-left: 50%;
+  z-index: 100;
+}
+
+#palace {
+  position: absolute;
+  margin-top: 26%;
+  margin-left: 70%;
+  mix-blend-mode: multiply;
+  z-index: 200;
+
+}
+
+#birdOnPedestal {
+  position: absolute;
+  margin-left: 43%;
+  margin-top: 30%;
+  mix-blend-mode: multiply;
+  z-index: 800;
+}
+
+#path {
+  position: absolute;
+  margin-top: 26%;
+  margin-left: 24%;
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+  z-index: 100;
+}
+
+#forestBanner, #performanceBanner, #palaceBanner {
+  position: absolute;
+  animation-name: bannerAnimation;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+
+#forestBanner {
+  margin-top: 17%;
+  margin-left: 5%;
+}
+
+#forestBanner:hover {
+  animation-play-state: paused;
+}
+
+#performanceBanner {
+  margin-top: 26%;
+  margin-left: 38%;
+  animation-delay: 1s;
+  z-index: 100;
+}
+
+#performanceBanner:hover {
+  animation-play-state: paused;
+}
+
+#palaceBanner {
+  margin-top: 21%;
+  margin-left: 70%;
+  animation-delay: 2s;
+}
+
+#palaceBanner:hover {
+  animation-play-state: paused;
+}
+
+@keyframes bannerAnimation {
+    0% {
+      transform: translate3d(0px, 0px, 0px);
+    }
+    50% {
+      transform: translate3d(0px, -7px, 0px);
+    }
+    100% {
+      transform: translate3d(0px, 0px, 0px);
+    }
+}
