@@ -1,0 +1,245 @@
+body {
+  background-color: #b3f0f9;
+}
+
+#container {
+  background-color: #b3f0f9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  padding: 0px;
+}
+
+#gradient {
+  background-image: url("media/gradient.png");
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  padding: 0px;
+  margin-top: 7%;
+}
+
+#texture {
+  background-image: url("media/texture.png");
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  padding: 0px;
+}
+
+#people_left {
+  position: absolute;
+  max-width: 64%;
+  max-height: auto;
+  margin-left: 0%;
+  margin-top:-4%;
+  z-index: 100;
+  animation-name: people;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+
+#people_right {
+  position: absolute;
+  max-width: 47%;
+  max-height: auto;
+  margin-left: 55%;
+  margin-top: 26%;
+  z-index: 100;
+  animation-name: people;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+}
+
+#pedestal {
+  position: absolute;
+  z-index: 99;
+  margin-left: 31%;
+  margin-top: 17%;
+  mix-blend-mode: multiply;
+}
+
+#bird {
+  position: absolute;
+  z-index: 500;
+  margin-left: 41%;
+  margin-top: 12%;
+  mix-blend-mode: multiply;
+}
+
+#notes {
+  position: absolute;
+  margin-left: 13%;
+  margin-top: 6%;
+}
+
+#lantern1 {
+  position: absolute;
+  margin-top: -42%;
+  margin-left: -5%;
+  mix-blend-mode: hard-light;
+  animation-name: lanternAnimation1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+
+#lantern2 {
+  position: absolute;
+  margin-top: -7%;
+  margin-left: 5%;
+  mix-blend-mode: hard-light;
+  animation-name: lanternAnimation3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+
+#lantern3 {
+  position: absolute;
+  margin-top: -27%;
+  margin-left: 13%;
+  mix-blend-mode: hard-light;
+  animation-name: lanternAnimation2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+}
+
+#lantern4 {
+  position: absolute;
+  margin-top: -24%;
+  margin-left: 73%;
+  mix-blend-mode: hard-light;
+  animation-name: lanternAnimation3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+
+#lantern5 {
+  position: absolute;
+  margin-top: -15%;
+  margin-left: 83%;
+  mix-blend-mode: hard-light;
+  animation-name: lanternAnimation2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.3s;
+}
+
+#lantern6 {
+  position: absolute;
+  margin-top: -15%;
+  margin-left: 88%;
+  mix-blend-mode: hard-light;
+  animation-name: lanternAnimation2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+}
+
+#lantern7 {
+  position: absolute;
+  margin-top: -27%;
+  margin-left: 91%;
+  mix-blend-mode: hard-light;
+  animation-name: lanternAnimation1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes lanternAnimation1 {
+  50% {
+    transform: translate3d(0px, 18px, 0px);
+  }
+}
+
+@keyframes lanternAnimation2 {
+  50% {
+    transform: translate3d(0px, 10px, 0px);
+  }
+}
+
+@keyframes lanternAnimation3 {
+  50% {
+    transform: translate3d(0px, 15px, 0px);
+  }
+}
+
+@keyframes people {
+  5% {
+    transform: translate3d(0px, -5px, 0px);
+  }
+  10% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  15% {
+    transform: translate3d(0px, -7px, 0px);
+  }
+  20% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  25% {
+    transform: translate3d(0px, -4px, 0px);
+  }
+  30% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+#link {
+  position: absolute;
+  width: 8%;
+  z-index: 500;
+  margin-top: 1%;
+  margin-left: 37%;
+}
+
+#link2 {
+  position: absolute;
+  width: 8.6%;
+  z-index: 500;
+  margin-top: 1.2%;
+  margin-left: 47%;
+}
+
+#crowdSoundTrigger {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  margin-top: 33%;
+  z-index: 600;
+}
