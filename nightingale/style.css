@@ -1,3 +1,4 @@
+/* The container div which will hold it all */
 #container {
   background-color: #ffc1bf;
   position: fixed;
@@ -11,6 +12,7 @@
   padding: 0px;
 }
 
+/* style the gradient and the texture which will act as the background*/
 #gradient {
   background-image: url("media/gradient.png");
   background-color: #ffc1bf;
@@ -37,7 +39,7 @@
   padding: 0px;
 }
 
-
+/* style all the grass rows and animate them to move up and down */
 #grassRow1 {
   margin-top: 38%;
   margin-left: -20px;
@@ -81,7 +83,7 @@
   animation-fill-mode: backwards;
   animation-timing-function: ease-in-out;
 }
-
+/* make two different keyframe animations for the clouds to vary the rows' movement */
 @keyframes grassMove1 {
   50% {
     transform: translate3d(-3px, 3px, 0px);
@@ -94,6 +96,7 @@
   }
 }
 
+/* style all tree elements */
 #tree_left {
   z-index: 160;
   position: absolute;
@@ -146,6 +149,7 @@
   animation-delay: 1s;
 }
 
+/* animate the top of the trees */
 #top_tree1, #top_tree2, #top_tree3, #top_tree4 {
   animation-name: treeMove;
   animation-duration: 3s;
@@ -154,12 +158,14 @@
   animation-timing-function: ease-in-out;
 }
 
+/* create the animation for the top of the trees */
 @keyframes treeMove {
   50% {
     transform: translate3d(2px, -4px, 0px);
   }
 }
 
+/* and for the trees standing on the ground */
 @keyframes treeSway {
   50% {
     transform: rotateZ(0.5deg);
@@ -180,6 +186,7 @@
   z-index: 161;
 }
 
+/* style the image of the man and the div that he lives in  */
 #animationBox {
   margin-left: -15%;
   margin-top: 20%;
@@ -195,12 +202,14 @@
   animation-timing-function: ease-in-out;
 }
 
+/* create an animation to move the man*/
 @keyframes manRotate {
     50% {
       transform: rotateZ(6deg);
     }
   }
 
+/* style the two animated SVG images. */
 #link {
   position: absolute;
   width: 10%;

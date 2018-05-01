@@ -1,6 +1,5 @@
-body {
-}
 
+/* style the container which all content will live in */
 #container {
   position: fixed;
   top: 0;
@@ -13,6 +12,7 @@ body {
   padding: 0px;
 }
 
+/* style the bottom layers, the gradient and  texture no.1 and no.2  */
 #gradient {
   background-image: url("media/gradient.png");
   background-size: 100%;
@@ -57,18 +57,19 @@ body {
   z-index: -100;
 }
 
+/* style the drawing of the man */
 #man {
   position: absolute;
   z-index: 90;
   margin-left: 18%;
 }
 
+/* style all trees */
 #cherryTree1 {
   position: absolute;
   margin-left: -17%;
   margin-top: -10%;
   z-index: 60;
-
 }
 
 #cherryTree2 {
@@ -124,6 +125,7 @@ body {
   z-index: 50;
 }
 
+/* style the bird and animate its rotation */
 #bird {
   position: absolute;
   z-index: 600;
@@ -136,6 +138,7 @@ body {
   animation-delay: 0s;
 }
 
+/* style both Death's arms and animate them */
 #left_arm {
   position: absolute;
   margin-left: 33%;
@@ -161,6 +164,7 @@ body {
   z-index: 200;
 }
 
+/* style each of the small flowers and animate them to fall down */
 #flower1 {
   position: absolute;
   z-index: 100;
@@ -245,6 +249,7 @@ body {
   animation-delay: 7s;
 }
 
+/* create different animations for the flowers so that they all move towards different positons */
 @keyframes flowerMove {
   100% {
     transform: translate(100px, 780px);
@@ -278,19 +283,21 @@ body {
   }
 }
 
-
+/* create keyframes for Death's arms */
 @keyframes arms {
   50% {
     transform: translate3d(10px, 30px, 0px);
   }
 }
 
+/* create keyframes for the bird */
 @keyframes bird {
   50% {
     transform: rotateZ(-8deg);
   }
 }
 
+/* style the animated SVG image */
 #link {
   position: absolute;
   width: 10%;

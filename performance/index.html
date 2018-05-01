@@ -6,10 +6,13 @@
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <!-- Create the container div in which all content will live -->
     <div id="container">
+      <!-- Add a gradient and texture -->
       <div id="texture"> </div>
       <div id="gradient"></div>
 
+      <!-- Add the background music and the narrating part 3 -->
       <audio id="bg_music" autoplay loop>
         <source src="media/bg_music.mp3" type="audio/mpeg">
         Your browser isn't invited for super fun audio time.
@@ -20,6 +23,7 @@
         Your browser isn't invited for super fun audio time.
       </audio>
 
+      <!-- Add the animated SVG images -->
       <a id="link" href="../index/">
         <img type="image/svg+xml" src="../svg_text/main_text.svg"/>
       </a>
@@ -28,14 +32,16 @@
         <img type="image/svg+xml" src="../svg_text/second_text.svg"/>
       </a>
 
+      <!-- Add the crowd -->
       <img id="people_right" src="media/right_group.png" width="" height="">
       <img id="people_left" src="media/left_group.png" width="" height="">
 
+      <!-- Add the bord + pedesal + notes.  -->
       <img id="pedestal" src="media/pedestal.png" width="420" height="441">
       <img id="bird" src="media/mech_bird.png" width="200" height="147">
       <img id="notes" src="media/notes.png" width="850" height="339">
 
-
+      <!-- add all lanterns -->
       <img id="lantern1" src="media/lantern_1.png" width="" height="">
       <img id="lantern2" src="media/lantern_2.png" width="87" height="400">
       <img id="lantern3" src="media/lantern_3.png" width="70" height="500">
@@ -44,8 +50,10 @@
       <img id="lantern6" src="media/lantern_6.png" width="48" height="430">
       <img id="lantern7" src="media/lantern_3.png" width="70" height="500">
 
+      <!-- create an invisible div to layer on top of the people, JQuery will detect hovers over this div and trigger a sound effect -->
       <div id="crowdSoundTrigger"> </div>
 
+      <!-- Add the sound effects which will be triggered by JQuery.  -->
       <audio id="chirp">
         <source src="media/chirp.mp3" type="audio/mpeg">
         Your browser isn't invited for super fun audio time.
@@ -57,6 +65,7 @@
       </audio>
 
     </div>
+    <!-- Link to my JS file and JQuery.  -->
   <script src="jquery-3.1.21.min.js"></script>
   <script src="script.js"></script>
   </body>

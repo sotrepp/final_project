@@ -2,6 +2,7 @@ body {
   background-color: #b3f0f9;
 }
 
+/* Style the container which will hold all content */
 #container {
   background-color: #b3f0f9;
   position: fixed;
@@ -40,6 +41,7 @@ body {
   padding: 0px;
 }
 
+/* style both images of people and animate them with different delay to offset the animation */
 #people_left {
   position: absolute;
   max-width: 64%;
@@ -69,6 +71,7 @@ body {
   animation-delay: 0.5s;
 }
 
+/* style the bird + pedestal + notes */
 #pedestal {
   position: absolute;
   z-index: 99;
@@ -91,6 +94,7 @@ body {
   margin-top: 6%;
 }
 
+/* add styles to all lanterns */
 #lantern1 {
   position: absolute;
   margin-top: -42%;
@@ -181,6 +185,7 @@ body {
   animation-timing-function: ease-in-out;
 }
 
+/* create three diffeernt lantern animations to make them move differently */
 @keyframes lanternAnimation1 {
   50% {
     transform: translate3d(0px, 18px, 0px);
@@ -199,6 +204,7 @@ body {
   }
 }
 
+/* create keyframes for the group of people */
 @keyframes people {
   5% {
     transform: translate3d(0px, -5px, 0px);
@@ -220,6 +226,7 @@ body {
   }
 }
 
+/* style the animated SVG */
 #link {
   position: absolute;
   width: 8%;
@@ -236,6 +243,7 @@ body {
   margin-left: 47%;
 }
 
+/* style the invisible div which will trigger Jquery */
 #crowdSoundTrigger {
   position: absolute;
   width: 100%;

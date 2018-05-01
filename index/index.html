@@ -6,23 +6,28 @@
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-
+    <!-- Background music -->
     <audio id="bg_music" autoplay loop>
       <source src="media/bg_music.mp3" type="audio/mpeg">
       Your browser isn't invited for super fun audio time.
     </audio>
 
+    <!-- Narrator part 1 -->
     <audio id="narrator" autoplay >
       <source src="media/narrator_part_1.mp3" type="audio/mpeg">
       Your browser isn't invited for super fun audio time.
     </audio>
 
+    <!--  Container to contain all content-->
     <div id="container">
+      <!-- Add gradients and texture -->
       <div id="gradient"></div>
       <div id="texture"> </div>
 
+      <!--  Animated title (done in After Effects)-->
       <video src="media/title.mp4" width="400" height="225" autoplay></video>
 
+      <!-- Add all image content -->
       <img id="mountainsBack" src="media/back_mountains2.png" width="800" height="230">
       <img id="mountainLeft" src="media/mountain_left.png" width="1160" height="506">
       <img id="mountainRight" src="media/mountain_right.png" width="1160" height="506">
@@ -38,11 +43,13 @@
       <img id="birdOnPedestal" src="media/bird2.png" width="100" height="160">
       <img id="path" src="media/path.png" width="800" height="400">
 
+      <!-- Make the banner images into links -->
       <a href="../nightingale"><img id="forestBanner" src="media/banner_1.png" width="280" height="104"></a>
       <a href="../performance"><img id="performanceBanner" src="media/banner_2.png" width="240" height="89"></a>
       <a href="../resurrection"><img id="palaceBanner" src="media/banner_3.png" width="280" height="104"></a>
     </div>
 
+    <!-- Add sounds for sound effects (they will be played with JQuery) -->
     <audio id="birdChirp">
       <source src="media/chirp.mp3"></source>
       Your browser isn't invited for super fun audio time.
@@ -58,6 +65,7 @@
       Your browser isn't invited for super fun audio time.
     </audio>
 
+    <!-- Link to my Javascript and the JQuery library -->
   <script src="jquery-3.1.21.min.js"></script>
   <script src="script.js"></script>
   </body>

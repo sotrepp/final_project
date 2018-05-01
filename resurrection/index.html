@@ -6,29 +6,33 @@
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-
+    <!-- Add background music -->
     <audio id="bg_music" autoplay loop>
       <source src="media/bg_music.mp3" type="audio/mpeg">
       Your browser isn't invited for super fun audio time.
     </audio>
 
+    <!-- add the narrating part 4 -->
     <audio id="narrator" autoplay >
       <source src="media/narrator_part_4.mp3" type="audio/mpeg">
       Your browser isn't invited for super fun audio time.
     </audio>
 
-
+    <!-- add the container which will hold all content -->
     <div id="container">
       <div id="gradient"></div>
       <div id="texture"> </div>
       <div id="texture2"> </div>
 
+      <!-- Add the animated SVG (there will only be one here since this is the last page) -->
       <a id="link" href="../index/">
         <img type="image/svg+xml" src="../svg_text/main_text.svg"/>
       </a>
 
+      <!-- Add the man -->
       <img id="man" src="media/man.png" width="800" height="700">
 
+      <!-- add all trees around the page -->
       <img id="cherryTree1" src="media/cherry_tree.png" width="500" height="559">
       <img id="cherryTree2" src="media/cherry_tree.png" width="500" height="559">
       <img id="cherryBranch1" src="media/cherry_blossom.png" width="400" height="420">
@@ -38,11 +42,14 @@
       <img id="cherryBranch5" src="media/cherry_blossom.png" width="400" height="420">
       <img id="cherryBranch6" src="media/cherry_blossom.png" width="350" height="368">
 
+      <!-- add the bird -->
       <img id="bird" src="media/bird.png" width="100" height="90">
 
+      <!-- Death's two arms -->
       <img id="left_arm" src="media/arm_left.png" width="190" height="400">
       <img id="right_arm" src="media/arm_right.png" width="190" height="400">
 
+      <!-- Add the flowers which will be animated to float downwards -->
       <img id="flower1" src="media/flower.png" width="30" height="30">
       <img id="flower2" src="media/flower.png" width="20" height="20">
       <img id="flower3" src="media/flower.png" width="15" height="15">
@@ -52,6 +59,7 @@
       <img id="flower7" src="media/flower.png" width="30" height="30">
       <img id="flower8" src="media/flower.png" width="20" height="20">
 
+      <!-- add the sound effects -->
       <audio id="birdChirp">
         <source src="media/chirp.mp3"></source>
         Your browser isn't invited for super fun audio time.
@@ -64,6 +72,7 @@
 
 
     </div>
+    <!-- link to JS file and the JQUERY library -->
     <script src="jquery-3.1.21.min.js"></script>
     <script src="script.js"></script>
   </body>

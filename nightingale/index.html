@@ -6,21 +6,25 @@
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-
+    <!-- Background music -->
     <audio id="bg_music" autoplay loop>
       <source src="media/bg_music.mp3" type="audio/mpeg">
       Your browser isn't invited for super fun audio time.
     </audio>
 
+    <!-- Narrator part 2 -->
     <audio id="narrator" autoplay>
       <source src="media/narrator_part_2.mp3" type="audio/mpeg">
       Your browser isn't invited for super fun audio time.
     </audio>
 
+    <!-- container which will hold all content -->
     <div id="container">
+      <!-- The two bottom layers; gradient and texture.  -->
       <div id="texture"> </div>
       <div id="gradient"></div>
 
+      <!-- add the animated SVG images as links.  -->
       <a id="link" href="../index/">
         <img type="image/svg+xml" src="../svg_text/main_text.svg"/>
       </a>
@@ -29,11 +33,12 @@
         <img type="image/svg+xml" src="../svg_text/second_text.svg"/>
       </a>
 
-
+      <!-- Add the grass rows.  -->
       <img id="grassRow1" src="media/first_row_2.png" width="1400" height="206">
       <img id="grassRow2" src="media/second_row.png" width="1400" height="206">
       <img id="grassRow3" src="media/third_row.png" width="1400" height="206">
 
+      <!-- And all the tree images  -->
       <img id="tree_left" src="media/tree_facing_right.png" width="880" height="644">
       <img id="tree_right" src="media/tree_facing_left.png" width="500" height="374">
 
@@ -43,11 +48,14 @@
       <img id="top_tree3" src="media/cherry_tree.png" width="600" height="637">
       <img id="top_tree4" src="media/ink_tree.png" width="400" height="361">
 
+      <!-- Add the bird and the tree stump in between grass layers -->
       <img id="tree_stump" src="media/stubbe.png" width="250" height="288">
       <img id="bird" src="media/bird.png" width="180" height="138">
 
+      <!-- But the img of a man inside a div so that I can animate the box forward while animating the img to rotate -->
       <div id="animationBox"><img id="man" src="media/man.png" width="150" height="332"></div>
 
+      <!-- Add the sound effect files -->
       <audio id="birdChirp">
         <source src="media/chirp.mp3"></source>
         Your browser isn't invited for super fun audio time.
@@ -59,6 +67,7 @@
       </audio>
 
     </div>
+    <!-- Link to my JS file and the JQuery library -->
     <script src="jquery-3.1.21.min.js"></script>
     <script src="script.js"></script>
   </body>

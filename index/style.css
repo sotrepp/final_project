@@ -1,7 +1,7 @@
 body {
   background-color: #ffc1bf;
 }
-
+/* Container styles */
 #container {
   background-color: #ffc1bf;
   position: fixed;
@@ -15,6 +15,7 @@ body {
   padding: 0px;
 }
 
+/* styles for the two very back layers: the gradient and the texture*/
 #gradient {
   background-image: url("media/gradient.png");
   background-color: #ffc1bf;
@@ -40,13 +41,15 @@ body {
   padding: 0px;
   mix-blend-mode: multiply;
 }
-
+/* title animation video */
 video {
   position: absolute;
   z-index: 5;
   mix-blend-mode: multiply;
   margin-left: 33%;
 }
+
+/* style all the images which make up the page*/
 
 #mountainsBack {
   position: absolute;
@@ -129,6 +132,7 @@ video {
   z-index: 100;
 }
 
+/* animate the banners*/
 #forestBanner, #performanceBanner, #palaceBanner {
   position: absolute;
   animation-name: bannerAnimation;
@@ -143,6 +147,7 @@ video {
   margin-left: 5%;
 }
 
+/* when you hover over the banner, make the animation pause*/
 #forestBanner:hover {
   animation-play-state: paused;
 }
@@ -154,6 +159,7 @@ video {
   z-index: 100;
 }
 
+/* when you hover over the banner, make the animation pause*/
 #performanceBanner:hover {
   animation-play-state: paused;
 }
@@ -164,10 +170,12 @@ video {
   animation-delay: 2s;
 }
 
+/* when you hover over the banner, make the animation pause*/
 #palaceBanner:hover {
   animation-play-state: paused;
 }
 
+/* Keyframes for the banner anumation */
 @keyframes bannerAnimation {
     0% {
       transform: translate3d(0px, 0px, 0px);
